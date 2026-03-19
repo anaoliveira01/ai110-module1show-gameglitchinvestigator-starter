@@ -5,24 +5,37 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+A guessing game with a simplistic UI and features that seem to work fine. After testing these features, I discovered several issues. I also noticed that the range and attempts did not make sense for the difficulty options.
+
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
+  - The attempts allowed don't update correctly
+  - Secrets exceed the range for easy and hard modes
+  - Range on hard mode is smaller than normal
+  - There is an issue with even numbers
+  - The hints were wrong
 
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+  - Claude in VSCode
+
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+  - For example, on the try block at line 36, it suggested me to fix the "go lower" and "go higher" print statements. The result made logical sense.
+
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+  - It did not suggest updating the update_score function in logic_utils.py correctly after doing the same for the parse_guess function.
+  
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
+  - 
+- Describe at least one test you ran (manual or using pytest) and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
 ---
